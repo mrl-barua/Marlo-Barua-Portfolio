@@ -538,6 +538,13 @@ var _scrollRevealDefault = parcelHelpers.interopDefault(_scrollReveal);
 var _tiltAnimation = require("./scripts/tiltAnimation");
 var _tiltAnimationDefault = parcelHelpers.interopDefault(_tiltAnimation);
 var _scrollRevealConfig = require("./data/scrollRevealConfig");
+// Prevent opening the console and disable left click
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+}, false);
+document.onkeydown = function(e) {
+    if (e.key === "F12" || e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) e.preventDefault();
+};
 (0, _scrollRevealDefault.default)((0, _scrollRevealConfig.targetElements), (0, _scrollRevealConfig.defaultProps));
 (0, _tiltAnimationDefault.default)();
 
