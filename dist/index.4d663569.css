@@ -96,4 +96,78 @@
   display: none;
 }
 
+.skill-content {
+  padding: 50px 0 80px;
+}
+
+.single-skill-content {
+  padding-top: 100px;
+}
+
+.section-heading h2 {
+  text-transform: uppercase;
+  border-bottom: 1px solid #e5ebf2;
+  padding-bottom: 50px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.single-progress-txt {
+  display: flex;
+}
+
+.single-progress-txt h3 {
+  width: 10%;
+  color: #a606c3;
+  position: relative;
+  top: 6px;
+  left: 20px;
+}
+
+.barWrapper {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.progress {
+  height: 8px;
+  width: 85%;
+  background: #e6ecf3;
+  border-radius: 3px;
+  margin-top: 15px;
+  margin-bottom: 37px;
+  overflow: visible;
+}
+
+.progress-bar {
+  -o-transition: width 1.5s ease-in-out;
+  background: #b636ff;
+  border-radius: 3px;
+  transition: width 1.5s ease-in-out;
+}
+
+.tooltip {
+  float: right;
+  position: relative;
+}
+
+.tooltip > .tooltip-inner {
+  color: #b636ff;
+  background-color: #0000;
+  border-radius: 0;
+  padding: 1px 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.popOver + .tooltip > .tooltip-arrow {
+  border-top: 6px solid #fff;
+  border-left: 6px solid #0000;
+  border-right: 6px solid #0000;
+  margin-left: 0;
+  bottom: -1px;
+  transform: translateX(-50%);
+}
+
 /*# sourceMappingURL=index.4d663569.css.map */
